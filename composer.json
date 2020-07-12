@@ -14,7 +14,7 @@
 		"issues": "https://github.com/FrozenNode/Laravel-Administrator/issues"
 	},
 	"require": {
-		"php": ">=5.4.0",
+		"php": ">=7.4",
 		"laravel/framework": "5.*",
 		"ckeditor/ckeditor": "4.*"
 	},
@@ -36,5 +36,5 @@
 			"if [ -d \"vendor/ckeditor/\" ] \nthen \nrm -R vendor/ckeditor/ \nfi"
 		]
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }
