@@ -97,7 +97,7 @@ class BelongsToTest extends \PHPUnit_Framework_TestCase {
 
 		$this->assertEquals($nested['pieces'], array($name));
 		$this->assertEquals($nested['models'][0], $stub);
-		$this->assertEquals(sizeof($nested['models']), 2);
+		$this->assertEquals(sizeof((array)$nested['models']), 2);
 	}
 
 	public function testGetNestedRelationshipsNest()
@@ -109,7 +109,7 @@ class BelongsToTest extends \PHPUnit_Framework_TestCase {
 
 		$this->assertEquals($nested['pieces'], array('bt', 'btnest'));
 		$this->assertEquals($nested['models'][0], $stub);
-		$this->assertEquals(sizeof($nested['models']), 3);
+		$this->assertEquals(sizeof((array)$nested['models']), 3);
 	}
 
 	public function testGetNestedRelationshipsDeepNest()
@@ -121,7 +121,7 @@ class BelongsToTest extends \PHPUnit_Framework_TestCase {
 
 		$this->assertEquals($nested['pieces'], array('bt', 'btnest', 'btdeepnest'));
 		$this->assertEquals($nested['models'][0], $stub);
-		$this->assertEquals(sizeof($nested['models']), 4);
+		$this->assertEquals(sizeof((array)$nested['models']), 4);
 	}
 
 	/**
